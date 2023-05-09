@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="./imagenes/favicon.ico">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Foldit:wght@300;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+        <meta name="author" content="Mariela Marini">
+        <meta name="description" content="Alura Challenge: Desafío de Encriptador">
+        <meta name="keywords" content="Alura, alura, Challenge, challenge, Encriptador, encriptador, desencriptador, desafío">
+        <title>Alura Challenge</title>
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <img class="alura" src="./imagenes/alura_a_circulo.ico" alt="logo">
+            </div>
+        </header>
+        <main>
+                    <section class="seccionA">                        
+                        <div class="ingreseTexto">
+                            <form>
+                                <textarea class="text-input" id="inputTexto" type="text" cols="20" rows="6" placeholder="Ingrese el texto aquí"></textarea>
+                                <p class="aclaracion">Solo minúsculas y sin acentos</p>
+                            </form>
+                        </div>   
+                        <div class="botones">
+                            <button class="boton-encriptar" id="botonEnc" type="button" value="Encriptar" onclick="valiEnc()">Encriptar</button>
+                            <button class="boton-desencriptar" id="botonDesenc" type="button" onclick="valiDesenc()">Desencriptar</button>
+                        </div>
+                    </section>
+                    <section class="seccionB">
+                        <div class="derecha">
+                            <img id="candado" src="./imagenes/candado.jpg" alt="candado">
+                            <h6 id="texto">Ningún mensaje fue encontrado</h6>
+                            <textarea id="texto2" cols="20" rows="6">Ingresa el texto que desees encriptar o desencriptar</textarea> 
+                            <button id="copiar" type="button" onclick="copy()">Copiar</button>
+                        </div>
+                    </section>
+        </main>
+        <footer>
+            <div class="redes">
+                <a class="linkedin" href="https://www.linkedin.com/in/mariela-marini" target="_blank"><img src="./imagenes/icons8-linkedin-64.png" alt="Logo Linkedin"></a>
+                <a class="github" href="https://github.com/MarielaMarini" target="_blank"><img src="./imagenes/icons8-github-64.png" alt="Logo Github"></a>
+            </div>
+        </footer>
+    </body>
+    <script src="./challenge.js"></script>
+</html>

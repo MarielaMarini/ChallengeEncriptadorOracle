@@ -1,0 +1,600 @@
+body{ 
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:100vh;
+    background-image: url("./imagenes/candado.jpg");
+    background-size: cover;
+}
+
+.alura{
+    background-color: aliceblue;
+    border:0.1em white;
+    border-radius:0.2em;
+    margin-left: 0.8em;
+    animation: rotar 5s linear infinite;
+}
+
+@keyframes rotar{
+    from{
+        transform:rotateY(180deg);
+    }
+    to{
+        transform:rotateY(-360deg);
+    }
+}
+
+.caja{
+    width: 940px;
+    height:70px;
+    position:relative;
+    padding-top:2%;
+    margin: 0; 
+}
+
+main{
+    font-family:'Orbitron', sans-serif;
+    font-size:1em;
+    width:100%;
+    height:auto;
+}
+
+.seccionA{
+    margin-top:8%;
+    float: left;
+    width:65%;
+    height:100%;
+}
+
+
+#inputTexto{
+    padding:3%;
+    margin-left: 12%;
+    width: 36%;
+    height: 10%;
+    display:inline-block;
+    position:relative;
+    text-align: justify;
+    font-family:'Orbitron', sans-serif;
+    color: white;
+    font-size: 1.4em;
+    border-radius: 24px;
+    border-color: lightskyblue;
+    background-image:url("./imagenes/fondo-azul-degradado_23-2149331354.jpg");
+}
+
+
+.aclaracion{
+    margin-left:14%; 
+    padding-top:0.2em;
+    color:white;
+    font-style: oblique;
+    font-size:1.2em;
+}
+
+.boton-encriptar{
+    position: absolute;
+    top: 70%;
+    left: 8%;
+    font-size: 1.2em;
+    width: 14%;
+    height: 8%;
+    border-radius: 24px;
+    background: linear-gradient(lightblue,aqua,blue);
+    color:darkblue;
+    font-family:'Orbitron', sans-serif;
+    cursor:pointer;
+    transition:all 1s ease;
+}
+
+.boton-encriptar:hover{
+    background: transparent;
+    color:aquamarine;
+    font-size:1.4em;
+}
+
+.boton-desencriptar{
+    position: absolute;
+    top: 70%;
+    left: 24%;
+    font-size: 1.2em;
+    width: 14%;
+    height: 8%;
+    border-radius: 24px;
+    background: linear-gradient(blue,aqua, lightblue);
+    color:black;
+    font-family:'Orbitron', sans-serif;
+    cursor:pointer;
+    transition:all 1s ease;
+}
+
+.boton-desencriptar:hover{
+    background: transparent;
+    color:white;
+    font-size:1.4em;
+}
+
+
+.seccionB{
+    float:right;
+    position:relative;
+    margin-top:2%;
+    right:1%;
+    width: 30%;
+    height: 100%;
+}
+
+
+#candado{
+    display:inline-block;
+    margin-top:1%;
+    margin-right: 0;
+    width: 70%;
+    height:50%;
+    border-radius: 10%;
+}
+
+
+#texto{
+    border:none;
+    color: white;
+    font-weight: lighter;
+    font-size:1.2em;
+    font-family:'Orbitron', sans-serif;
+    margin-left:2%;
+    margin-top:4%;
+    padding-left:20px;
+}
+
+#texto2{
+    display:inline-block;
+    position:relative;
+    background-image:url("./imagenes/fondo-azul-degradado_23-2149331354.jpg");
+    padding:0.8em;
+    border:none;
+    color: white;
+    font-family:'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    width:80%;
+    top:10%;
+    right:0.2em;
+    border-radius:10%;
+}
+
+#texto2:focus{
+    outline:none;
+}
+
+
+#copiar{
+    display:inline-block;
+    position:relative;
+    margin-top:4em;
+    padding:0.8em;
+    top: 80%;
+    right:0.2%;
+    font-size: 1.2em;
+    width:28%;
+    height:18%;
+    border-radius: 24px;
+    background: linear-gradient(#36C3FE, rgb(1, 1, 61));
+    color:white;
+    font-family:'Orbitron', sans-serif;
+    cursor:pointer;
+    transition:all 1s ease;
+    display:none;
+}
+
+#copiar:hover{
+    background: transparent;
+    color:aquamarine;
+    font-size:1.4em;
+}
+
+.redes{
+    position:absolute;
+    display:block;
+    left:0;
+    top:92%;
+    width: 100%;
+    height:10%;
+    background: linear-gradient(darkblue,aquamarine,darkblue);
+    text-align: center;
+}
+
+/* diseño responsive para mobile*/
+@media screen and (max-width:480px) {
+    body{
+        background-image:url("./imagenes/ondas.jpg");
+        font-size: small;
+    }
+    .caja{
+        width: auto;
+        height:10%;
+        display:flex;
+        justify-content: flex-start;
+        padding-bottom:2%;
+    }
+    .alura{
+        width:1.8em;
+        height:1.8em;
+    }
+    main{
+        display:flexbox;
+        margin:auto;
+        width:auto;
+        height:auto;
+    }
+    .seccionA{
+        display:flexbox;
+        width:auto;
+        height:auto;
+        float:none;
+        margin:0.2em;
+        padding:0.2em;
+    }
+    .ingreseTexto{
+        display:flexbox;
+        justify-content: center;
+        justify-items: center;
+        padding:0.1em;
+        width:auto;
+        height:12%;
+        margin:0;
+    }
+    .text-input{
+        display:flexbox;
+        justify-self:center;
+        justify-items: center;
+        margin:auto;
+        padding:0.1em;
+        width:auto;
+    }
+    .aclaracion{
+        display:flexbox;
+        justify-content:center;
+        justify-items: center;
+        margin-left:3em; 
+        margin-bottom:1em;
+    }
+    .boton-encriptar{
+        display:inline-block;
+        position:relative;
+        top:auto;
+        left:2em;
+        width: 8em;
+        height:auto;
+        margin-bottom:0.2em;
+        padding:0.2em;
+        border-radius:10%;
+    }
+    .boton-desencriptar{
+        display:inline-block;
+        position:relative;
+        top:auto;
+        width: 8em;
+        height:auto;
+        margin:0.2em;
+        padding:0.2em;
+        border-radius:10%;
+    }
+    .seccionB{
+        justify-content: center;
+        width:auto;
+        height:auto;
+        float:none;
+        margin:0.2em;
+    }
+    #texto{
+        top:0;
+        right:0;
+        margin:0.1em;
+        padding:0.1em;
+    }
+    #candado{
+        display:inline-block;
+        position:relative;
+        margin-top:3em;
+        margin-left:2em;
+        margin-right:0;
+        margin-bottom:2em;
+        width: 56%;
+        height:40%;
+        border-radius:1em;
+    }
+    #texto2{
+        width: auto;
+        height: auto;
+        margin:2em;
+        margin-top:2em;
+    }
+    #copiar{
+        position:relative;
+        display:inline-block;
+        margin-bottom:2em;
+        margin-top:1em;
+        right:0;
+        left:2em;
+        width: 8em;
+        height:auto;
+        margin:0.2em;
+        padding:0.2em;
+        border-radius:10%;
+        display:none;
+    }
+    #copiar:hover{
+        font-size: medium;
+        background-color: aliceblue;
+        color:blue;
+    }
+    .redes{
+        position:fixed;
+        margin-bottom:2em;
+        width:100%;
+    }
+}
+
+/* diseño responsive para tablet*/
+@media screen and (min-width:481px) and (max-width:1024px){
+    body{
+        background-image: url("./imagenes/ondas.jpg");
+    }
+    .caja{
+        width: auto;
+        height:auto;
+        display:flex;
+        justify-content: flex-start;
+        padding-bottom:0.2em;
+    }
+    main{
+        display:flexbox;
+        margin:auto;
+        width:auto;
+        height:auto;
+    }
+    .seccionA{
+        display:block;
+        width:auto;
+        height:auto;
+        float:none;
+        margin:0.2em;
+        padding:0.2em;
+    }
+    .ingreseTexto{
+        display:flexbox;
+        justify-content: center;
+        justify-items: center;
+        padding:2em;
+        width:auto;
+        height:auto;
+        margin:auto;
+    }
+    .text-input{
+        display:flexbox;
+        justify-self:center;
+        justify-items: center;
+        margin:auto;
+        padding:0.2em;
+        width:auto;
+    }
+    .aclaracion{
+        display:flexbox;
+        justify-content:center;
+        justify-items: center;
+        margin-left:6em; 
+        margin-bottom:0.1em;
+    }
+    .boton-encriptar{
+        display:inline-block;
+        position:relative;
+        top:auto;
+        margin-left:3em;
+        width: auto;
+        height:auto;
+        padding:0.2em;
+        border-radius:10%;
+    }
+    .boton-desencriptar{
+        display:inline-block;
+        position:relative;
+        top:auto;
+        margin-left:0.2em;
+        width: auto;
+        height:auto;
+        margin:0.1em;
+        padding:0.2em;
+        border-radius:10%;
+    }
+    .seccionB{
+        justify-content: center;
+        width:auto;
+        height:auto;
+        float:none;
+        margin:0.2em;
+    }
+    #texto{
+        position:relative;
+        top:0;
+        margin-left:8em;
+        margin-top:0.2em;
+        margin-bottom:0.8em;
+        padding:0.1em;
+    }
+    #candado{
+        display:flex;
+        justify-content: center;
+        justify-items: center;
+        margin-top:3em;
+        left:6em;
+        margin-right:0;
+        margin-bottom:0.8em;
+        margin-left:10em;
+        width: 40%;
+        height:30%;
+        border-radius:1em;
+    }
+    #texto2{
+        margin-left:4em;
+        margin-top:3em;
+        margin-bottom:2em;
+        width:50%;
+        height:50%;
+    }
+    #copiar{
+        position:relative;
+        display:flex;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom:0.8em;
+        right:0;
+        left:6em;
+        width: 6em;
+        height:auto;
+        padding:0.3em;
+        border-radius:0.2em;
+        display:none;
+    }
+    .redes{
+        position:fixed;
+        margin:0;
+        width:100%;
+    }
+}
+
+/* diseño responsive para mas de 1024px*/
+@media screen and (min-width:1024px)and(max-width:1279){
+    body{
+        background-image: url("./imagenes/ondas.jpg");
+        font-size: large;
+    }
+    .caja{
+        width: auto;
+        height:auto;
+        display:flex;
+        justify-content: flex-start;
+        padding-bottom:0.2em;
+    }
+    main{
+        display:flexbox;
+        margin:auto;
+        width:auto;
+        height:auto;
+    }
+    .seccionA{
+        display:inline-block;
+        width:auto;
+        height:auto;
+        float:none;
+        margin:auto;
+        padding:0.4em;
+    }
+    .ingreseTexto{
+        display:flexbox;
+        justify-content: center;
+        justify-items: center;
+        padding:4em;
+        width:80%;
+        height:auto;
+        margin:auto;
+    }
+    .text-input{
+        display:flexbox;
+        justify-self:center;
+        justify-items: center;
+        margin:auto;
+        padding:0.4em;
+        width:80%;
+    }
+    .aclaracion{
+        display:flexbox;
+        justify-content:center;
+        justify-items: center;
+        margin-left:5em; 
+        margin-bottom:0.1em;
+    }
+    .boton-encriptar{
+        display:inline-block;
+        position:relative;
+        top:0.2em;
+        margin-left:5em;
+        width: 8em;
+        height:auto;
+        padding:0.2em;
+        border-radius:10%;
+    }
+    .boton-desencriptar{
+        display:inline-block;
+        position:relative;
+        top:0.2em;
+        left:10em;
+        margin-left:1em;
+        width: 8em;
+        height:auto;
+        margin:0;
+        padding:0.4em;
+        border-radius:10%;
+    }
+    .seccionB{
+        justify-content: center;
+        width:auto;
+        height:auto;
+        float:none;
+        margin:0.2em;
+    }
+    #texto{
+        position:relative;
+        top:0;
+        left:5em;
+        margin-top:0.2em;
+        margin-bottom:0.8em;
+        padding:0.1em;
+    }
+    #candado{
+        display:flex;
+        justify-content: center;
+        justify-items: center;
+        margin-top:3em;
+        left:10em;
+        margin-left:10em;
+        margin-right:0;
+        margin-bottom:0.8em;
+        width: 40%;
+        height:30%;
+        border-radius:1em;
+    }
+    #texto2{
+        margin-left:8em;
+        left:0;
+        margin-bottom:1em;
+        margin-top:3em;
+        width:40%;
+        height:50%;
+        padding-inline: 2em;
+    }
+    #copiar{
+        position:relative;
+        display:flex;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom:4em;
+        right:0;
+        left:0;
+        margin-left:8em;
+        width: 8em;
+        height:auto;
+        padding:0.4em;
+        border-radius:0.2em;
+        display:none;
+    }
+    .redes{
+        position:fixed;
+        margin:0;
+        width:100%;
+    }
+}
+
+
+
+
+
